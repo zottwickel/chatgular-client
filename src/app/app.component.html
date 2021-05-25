@@ -1,0 +1,24 @@
+
+<ul class="chat-list">
+  <li *ngFor="let message of messageList; index as i"
+      class="chat-message"
+      [ngClass]="i % 2 ? 'odd' : 'even'">
+      {{message}}
+  </li>
+</ul>
+
+
+<form (submit)="sendMessage()"
+      class="chat-form"
+      autocomplete="off">
+  <input class="chat-bar"
+         maxlength="100"
+         placeholder="Enter your chat text here"
+         name="message"
+         type="text"
+         [(ngModel)]="newMessage"/>
+  <button type="submit"
+          class="chat-submit">
+    Send
+  </button>
+</form>

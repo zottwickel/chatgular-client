@@ -1,0 +1,39 @@
+.chat-message {
+  list-style-type: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.chat-message.even {
+  background: #F0F0F0;
+}
+.chat-message.odd {
+  background: #D0D0D0;
+}
+.chat-list {
+  margin: 0;
+  padding: 0;
+}
+.chat-form {
+  width: 100%;
+  padding: 1rem;
+  background: #505050;
+  position: fixed;
+  bottom: 0;
+}
+.chat-bar {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  outline: none;
+  width: calc(100% - 80.45px - 1rem);
+  border-radius: 0.5rem 0 0 0.5rem;
+  border: none;
+}
+.chat-submit {
+  width: calc(80.45px + 1rem);
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  background: #D0D0D0;
+  border: none;
+  border-radius: 0 0.5rem 0.5rem 0;
+  cursor: pointer;
+}
